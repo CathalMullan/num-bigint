@@ -13,7 +13,7 @@ name = "num-bigint-dig"
 repository = "https://github.com/dignifiedquire/num-bigint"
 version = "0.8.6"
 edition = "2021"
-rust-version = "1.56"
+rust-version = "1.60"
 readme = "README.md"
 build = "build.rs"
 autobenches = false
@@ -86,8 +86,8 @@ std = [
     "num-integer/std",
     "num-traits/std",
     "smallvec/write",
-    "rand/std",
-    "serde/std"
+    "rand?/std",
+    "serde?/std"
 ]
 u64_digit = []
 prime = ["rand/std_rng"]
